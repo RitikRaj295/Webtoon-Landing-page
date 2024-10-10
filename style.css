@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    user-select: none;
+}
+body{
+    background-color: black;
+}
+
+.menuButton{
+    display: none;
+}
+
+header{
+    height:6rem;
+    width: 100vw;
+    background-color: rgb(157, 157, 219);
+    padding: 0 1rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    align-items: center;
+    height: 6rem;
+}
+.grid-navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.logo{
+    background-image: url('./images/Logos.png');
+    background-size: contain;
+    height: 6rem;
+    width:10rem;
+    background-repeat: no-repeat;
+
+}
+
+.nav1 ul{
+    display: flex;
+    flex-direction:row ;
+    justify-content:center ;
+    gap:2rem;
+}
+.nav2 ul{
+    display: flex;
+    flex-direction:row ;
+    justify-content:center ;
+    gap:2rem;
+}
+.publish{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.publish:active{
+    background-color: rgb(75, 75, 238);
+}
+.search{
+    padding: 3px;
+    width: 3.5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+.search:active{
+    background-color:rgb(75, 75, 238) ;
+}
+span{
+    color: rgb(24, 121, 24);
+    font-weight: bold;
+}
+span:active{
+    color: rgb(1, 255, 65);
+}
+a{
+    color:black;
+    border-bottom: none;
+    text-decoration: none;
+
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+a:active{
+   color:blue;
+}
+@media screen and (max-width:900px) {
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        height: 6rem;
+    }
+    .menuButton{
+        display:block;
+        text-align: end;
+        margin-right:1rem ;
+        cursor: pointer;
+    }
+    .menuButton i:active{
+        color:white;
+    }
+    .grid-navbar{
+        display:none;
+     
+    }
+    .logo{
+        margin-left:2rem ;
+    }
+
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation: fade 1s; 
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+    
+.calendar{
+    height: 5vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    background-color: rgb(92, 92, 222);
+}
+.calendar>button{
+    background-color: rgb(92, 92, 222);
+    cursor: pointer;
+    padding:0 1rem;
+    border:none;
+    &:active{
+        opacity: .4;
+        color:rgb(153, 255, 0);
+    }
+}
+.card{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.cards{
+    height: 20vh;
+    width: 20vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-top:10px;
+}
+.cards>img{
+    background-size: contain;
+    border-radius: 1rem;
+}
+.cards>p{
+    font-size: .9rem;
+    color:white;
+    text-align: center;
+}
+.cards:active{
+    opacity: .4;
+}
+.message{
+    margin-top: 7rem;
+    text-align: center;
+    width: 100vw;
+}
+.message>p{
+    color:white
+}
+.footer-image1{
+    background-color: rgb(157, 157, 219);
+    margin-top: 15vh;
+}
+.footer-image2{
+    background-color: rgb(157, 157, 219);
+    
+}
+footer{
+    color:black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer{
+    border: 1px solid wheat;
+    width: 100vw;
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(125, 125, 177);
+}
+.icons{
+    display: flex;
+    gap:1.5rem;
+    margin:5px;
+    cursor: pointer;
+}
+.icons>p:active{
+    color: blue;
+}
+.footer-text{
+    display: flex;
+    gap:1rem;
+    margin: 2px;
+    cursor: pointer;
+}
+.footer-text>p:hover{
+    border-bottom: 2px solid ;
+
+
+}
+.footer-license{
+    opacity: .4;
+    margin:1rem
+}
