@@ -121,8 +121,28 @@ a:active{
     .logo{
         margin-left:2rem ;
     }
-
-}
+    .calendar>button{
+        display: none;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+    }
+    .cards{
+        height: 20vh;
+        width: 30vw;
+        margin: 2px;
+    }
+    .cards>img{
+     height:20vh;
+     width: 20vw;
+     background-size: coontain;
+    
+    }
 
 
 .slideshow-container {
